@@ -11,6 +11,8 @@
     // VitePress の cleanUrls（/guide/install → guide/install.html）に合わせる
     "html_handling": "auto-trailing-slash"
   },
+  // 公開先は pickture.eyemono.moe だけにする（*.workers.dev では配信しない）
+  "workers_dev": false,
   "routes": [
     { "pattern": "pickture.eyemono.moe", "custom_domain": true }
   ],
