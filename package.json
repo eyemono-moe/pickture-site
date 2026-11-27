@@ -1,6 +1,7 @@
 {
-  "name": "pickture-docs",
+  "name": "pickture-site",
   "private": true,
+  "packageManager": "pnpm@11.24.0",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
