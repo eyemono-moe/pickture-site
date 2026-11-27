@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 仮のアイコン（カメラ）。差し替える -->
+  <rect x="6" y="18" width="52" height="34" rx="6" fill="#2b2f4a"/>
+  <rect x="14" y="12" width="14" height="8" rx="2" fill="#2b2f4a"/>
+  <circle cx="34" cy="35" r="11" fill="#e85d54"/>
+  <circle cx="34" cy="35" r="5" fill="#2b2f4a"/>
+</svg>

@@ -1,0 +1,18 @@
+// PICKTURE マニュアルの公開設定（Cloudflare Workers の静的アセット）。
+// Worker のスクリプトはなく、VitePress のビルド結果をそのまま配信する。
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pickture-docs",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./.vitepress/dist",
+    // 見つからないページは VitePress が出力する 404.html を返す
+    "not_found_handling": "404-page",
+    // VitePress の cleanUrls（/guide/install → guide/install.html）に合わせる
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "pickture.eyemono.moe", "custom_domain": true }
+  ],
+  "observability": { "enabled": false }
+}

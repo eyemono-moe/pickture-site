@@ -1,0 +1,17 @@
+{
+  "name": "pickture-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "preview": "vitepress build && wrangler dev",
+    "deploy": "vitepress build && wrangler deploy"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.46",
+    "wrangler": "^4.168.0"
+  }
+}
