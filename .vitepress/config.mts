@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
-// TODO: GitHub に公開したら、リポジトリの URL に合わせる（「このページを編集」のリンクに使う）
-const REPO = 'https://github.com/eyemono-moe/pickture'
+// このマニュアルのリポジトリ（「このページを編集」のリンクに使う）
+const REPO = 'https://github.com/eyemono-moe/pickture-site'
 const SITE = 'https://pickture.eyemono.moe'
 // TODO: BOOTH の商品ページができたら URL を入れる
 const BOOTH = 'https://booth.pm/'
@@ -69,7 +69,7 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: REPO }],
 
     editLink: {
-      pattern: `${REPO}/edit/main/site/:path`,
+      pattern: `${REPO}/edit/main/:path`,
       text: 'このページを編集する',
     },
 
